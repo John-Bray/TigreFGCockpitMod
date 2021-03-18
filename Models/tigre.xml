@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>tigre.ac</path>
+
+  <nasal>
+    <load>
+      var livery_update = aircraft.livery_update.new("Aircraft/Tigre/Models/Liveries", 10);
+
+      var self = cmdarg();
+
+      var float_0 = self.getNode("sim/multiplay/generic/float[0]", 1);
+      var float_1 = self.getNode("sim/multiplay/generic/float[1]", 1);
+      
+      var crew_door = self.getNode("sim/model/door-positions/crew/position-norm", 1);
+      var passenger_door = self.getNode("sim/model/door-positions/passenger/position-norm", 1);
+      
+      crew_door.alias(float_0);
+      passenger_door.alias(float_1);
+    </load>
+
+    <unload>
+      livery_update.stop();
+      crew_door.unalias();
+      passenger_door.unalias();
+    </unload>
+  </nasal>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>radar</object-name>
+    <object-name>air1</object-name>
+    <object-name>cache</object-name>
+    <object-name>echappes</object-name>
+    <object-name>derive</object-name>
+    <object-name>plansvertical</object-name>
+    <object-name>grille</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
+    <object-name>poignees</object-name>
+
+    <object-name>trous</object-name>
+    <object-name>attacheessuis</object-name>
+    <object-name>essuisglace</object-name>
+    <object-name>tuyau</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeG3</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>axeD3</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>roueA</object-name>
+    <object-name>attachgun</object-name>
+    <object-name>supportgun</object-name>
+    <object-name>gun</object-name>
+
+    <!-- Transparence -->
+    <object-name>vitres</object-name>
+    <object-name>entreeair</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>radar</object-name>
+    <object-name>air1</object-name>
+    <object-name>cache</object-name>
+    <object-name>echappes</object-name>
+    <object-name>derive</object-name>
+    <object-name>plansvertical</object-name>
+    <object-name>grille</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
+    <object-name>poignees</object-name>
+
+    <object-name>trous</object-name>
+    <object-name>attacheessuis</object-name>
+    <object-name>essuisglace</object-name>
+    <object-name>tuyau</object-name>
+    <object-name>axeG1</object-name>
+    <object-name>axeG2</object-name>
+    <object-name>axeG3</object-name>
+    <object-name>roueG</object-name>
+    <object-name>axeD1</object-name>
+    <object-name>axeD2</object-name>
+    <object-name>axeD3</object-name>
+    <object-name>roueD</object-name>
+    <object-name>axeA</object-name>
+    <object-name>roueA</object-name>
+    <object-name>attachgun</object-name>
+    <object-name>supportgun</object-name>
+    <object-name>gun</object-name>
+
+    <property-base>sim/model/livery</property-base>
+    <texture-prop>texture</texture-prop>
+    <texture>texture.png</texture>
+    <specular>
+      <red-prop>specular/red</red-prop>
+      <green-prop>specular/green</green-prop>
+      <blue-prop>specular/blue</blue-prop>
+    </specular>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>fuselage</object-name>
+    <object-name>ailes</object-name>
+    <object-name>radar</object-name>
+    <object-name>air1</object-name>
+    <object-name>cache</object-name>
+    <object-name>echappes</object-name>
+    <object-name>derive</object-name>
+    <object-name>plansvertical</object-name>
+    <object-name>grille</object-name>
+    <object-name>cacheB</object-name>
+    <object-name>cacheH</object-name>
+    <object-name>poignees</object-name>
+  </effect>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Tigre/Models/Effects/Glass/glass</inherits-from>
+    <object-name>vitres</object-name>
+  </effect>
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>vitres</object-name>
+    <object-name>entreeair</object-name>
+  </effect>
+  
+  <!-- Une ombre pour OSG -->
+  <model>
+    <path>Aircraft/Tigre/Models/shadow.xml</path>
+    <offsets>
+      <x-m> -1.363 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.735 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Intérieur -->
+  <model>
+    <usage>interior</usage><!-- needed for AI/ MP exclusion. Only one instance of the  
+                                  tag is allowed for the  whole aircraft. -->
+    <name>TIGR_interior</name>
+    <path>Aircraft/Tigre/Models/Interior/interior.xml</path>
+  </model>
+
+  <!-- Rotor principale -->
+  <model>
+    <path>Aircraft/Tigre/Models/MainRotor/mainrotor.xml</path>
+    <offsets>
+      <x-m> -1.363 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  1.780 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Rotor de queue -->
+  <model>
+    <path>Aircraft/Tigre/Models/TailRotor/tailrotor.xml</path>
+    <offsets>
+      <x-m>  6.557 </x-m>
+      <y-m>  0.411 </y-m>
+      <z-m>  0.992 </z-m>
+      <roll-deg>  -90 </roll-deg>
+    </offsets>
+  </model>
+
+  <!-- Compression
+  <animation>
+    <name>RoueAvant</name>
+    <object-name>roueA</object-name>
+    <object-name>axeAB</object-name>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>RoueAvant</object-name>
+    <property>/gear/gear[0]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.02 </dep></entry>
+      <entry><ind> 0.04 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.07 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <name>RoueGauche</name>
+    <object-name>roueG</object-name>
+    <object-name>axeG1</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueGauche</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   5 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.784 </x-m>
+      <y-m> -1.000 </y-m>
+      <z-m> -0.845 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>translate</type>
+    <object-name>axeG3</object-name>
+    <property>/gear/gear[1]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.01 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.06 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <name>RoueDroite</name>
+    <object-name>roueD</object-name>
+    <object-name>axeD1</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>RoueDroite</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   5 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> -15 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.784 </x-m>
+      <y-m> -1.000 </y-m>
+      <z-m> -0.845 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+ 
+  <animation>
+    <type>translate</type>
+    <object-name>axeD3</object-name>
+    <property>/gear/gear[2]/compression-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep> -0.01 </dep></entry>
+      <entry><ind> 0.05 </ind><dep>  0.00 </dep></entry>
+      <entry><ind> 1.00 </ind><dep>  0.06 </dep></entry>
+    </interpolation>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation> -->
+ 
+  <!-- Rotation des roues lors du roulage -->
+  <animation>
+    <type>spin</type>
+    <object-name>roueG</object-name>
+    <property>/gear/gear[0]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.813 </x-m>
+      <y-m> -1.190 </y-m>
+      <z-m> -1.648 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueD</object-name>
+    <property>/gear/gear[1]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m> -2.813 </x-m>
+      <y-m>  1.190 </y-m>
+      <z-m> -1.648 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>spin</type>
+    <object-name>roueA</object-name>
+    <property>/gear/gear[2]/rollspeed-ms</property>
+    <factor> 30 </factor>
+    <center>
+      <x-m>  4.818 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -1.768 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <!-- Effets lumineux -->
+  <model>
+    <path>Aircraft/Tigre/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 6.738 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 1.429 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Tigre/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -1.668 </x-m>
+      <y-m> -2.154 </y-m>
+      <z-m> -0.252 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Tigre/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -1.668 </x-m>
+      <y-m>  2.154 </y-m>
+      <z-m> -0.252 </z-m>
+    </offsets>
+  </model>
+  
+  <!--==========Turning Turret =====================-->
+  <animation>
+    <type>rotate</type>
+    <object-name>attachgun</object-name>
+    <object-name>supportgun</object-name>
+    <object-name>gun</object-name>
+    <property>sim/model/turret[0]/heading</property>
+    <center>
+      <x-m> -5.8 </x-m>
+      <y-m>  0.0</y-m>
+      <z-m>  0.0 </z-m>
+    </center>
+    <axis>
+      <x>  0 </x>
+      <y>  0 </y>
+      <z> -1 </z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>gun</object-name>
+    <property>sim/model/turret[0]/pitch</property>
+    <offset-deg> -10 </offset-deg>
+    <center>
+      <x-m> -5.8 </x-m>
+      <y-m>  0.0 </y-m>
+      <z-m> -1.2 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>

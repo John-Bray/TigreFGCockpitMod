@@ -1,0 +1,9 @@
+         numblades="6"
+         weightperblade="600"
+         twist="-4.1"
+         chord="0.74"
+         rpm="185"
+         
+         
+         
+engines/engine/tot-degc .... does not exit ??

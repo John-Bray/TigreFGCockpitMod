@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>Tigre_Interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>inttour</object-name>
+    <object-name>fond</object-name>
+    <object-name>siegeavant</object-name>
+    <object-name>siegearriere</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intvitres</object-name>
+  </animation>
+  
+    <effect>
+		<inherits-from>Effects/model-transparent</inherits-from>
+		<object-name>intvitres</object-name>
+	</effect>
+
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Tigre/Models/Effects/Glass/glass</inherits-from>
+    <object-name>intvitres</object-name>
+  </effect>
+  
+  <!-- Planche de bord 
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -3.994 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.057 </z-m>
+    </offsets>
+  </model>-->
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Tigre/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.964 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.413 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tireur -->
+  <model>
+    <path>Aircraft/Tigre/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -2.472 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.004 </z-m>
+    </offsets>
+  </model>
+<!-- ========================================================================== Clock  -->  
+  <animation> <type>rotate</type><object-name>HourHand</object-name>
+	<property>instrumentation/clock/indicated-sec</property>
+	<factor>0.00833333333333333</factor>
+	<axis><object-name>rotationCrono</object-name></axis>
+  </animation>
+  <animation> <type>rotate</type><object-name>MinuteHand</object-name>
+	<property>instrumentation/clock/indicated-sec</property>
+	<factor>0.1</factor>	
+	<axis><object-name>rotationCrono</object-name></axis>
+  </animation>
+  <animation> <type>rotate</type><object-name>SecondHand</object-name>
+	<property>instrumentation/clock/indicated-sec</property>
+	<factor>6</factor>
+	<axis><object-name>rotationCrono</object-name></axis>
+  </animation>
+<!-- ============================================================================== NR --> 
+<animation><type>rotate</type>
+  <object-name>pointerNR_Inner</object-name>
+  <object-name>pointerNR_Outer</object-name>
+    <property>rotors/main/rpm</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep> 145 </dep></entry>
+      <entry><ind> 100 </ind><dep> 180 </dep></entry>
+      <entry><ind> 250 </ind><dep> 250 </dep></entry>
+      <entry><ind> 325 </ind><dep> 304.5 </dep></entry>
+      <entry><ind> 400 </ind><dep> 359 </dep></entry>
+    </interpolation>
+    <axis><object-name>rotationNR</object-name></axis>
+  </animation> 
+<!-- ============================================================================== temp --> 
+<animation><type>rotate</type>
+  <object-name>pointerTemp</object-name>
+    <property>engines/engine/tot-degc</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>  45 </dep></entry>
+      <entry><ind> 600 </ind><dep> 180 </dep></entry>
+      <entry><ind>1400 </ind><dep> 359 </dep></entry>
+    </interpolation>
+    <axis><object-name>rotationTempTorque</object-name></axis>
+  </animation>   
+  <!-- ==================================================================== Engine temp --> 
+  <animation><type>rotate</type>
+  <object-name>pointerTorque</object-name>
+    <property>rotors/gear/total-torque</property>
+    <interpolation>
+      <entry><ind>       0 </ind><dep>  45 </dep></entry>
+      <entry><ind> 2100000 </ind><dep> 180 </dep></entry>
+      <entry><ind> 4200000 </ind><dep> 270 </dep></entry>
+      <entry><ind> 6400000 </ind><dep> 359 </dep></entry>
+    </interpolation>
+    <axis><object-name>rotationTempTorque</object-name></axis>
+  </animation>  
+  <!-- ==================================================================== VSI / Vertical Speed Indicator -->  
+  <animation>
+    <type>rotate</type>
+    <object-name>needleVSI</object-name>
+    <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
+    <interpolation>
+     <entry><ind> -2500 </ind><dep>  -165 </dep></entry>
+     <entry><ind> -2000 </ind><dep>  -142 </dep></entry>
+      <entry><ind> -1500 </ind><dep> -110 </dep></entry>
+      <entry><ind> -1000 </ind><dep>  -82 </dep></entry>
+      <entry><ind>  -500 </ind><dep>  -40 </dep></entry>
+      <entry><ind>     0 </ind><dep>    0 </dep></entry>
+      <entry><ind>   500 </ind><dep>   40 </dep></entry>
+      <entry><ind>  1000 </ind><dep>   82 </dep></entry>
+      <entry><ind>  1500 </ind><dep>  110 </dep></entry>
+      <entry><ind>  2000 </ind><dep>  142 </dep></entry>
+      <entry><ind>  2500 </ind><dep>  165 </dep></entry>
+    </interpolation>
+    <axis><object-name>rotationVSI</object-name></axis>
+  </animation>  
+ <!-- ============================================================================ ASI --> 
+<animation><type>rotate</type><object-name>needleASI</object-name>
+    <property>velocities/equivalent-kt</property>
+    <interpolation>
+      <entry><ind>   0 </ind><dep>   0 </dep></entry>
+      <entry><ind>  30 </ind><dep>  30 </dep></entry>
+      <entry><ind>  60 </ind><dep>  85 </dep></entry>
+      <entry><ind> 120 </ind><dep> 192 </dep></entry>
+      <entry><ind> 200 </ind><dep> 335 </dep></entry>
+    </interpolation>
+    <axis><object-name>rotationASI</object-name></axis>
+  </animation>  
+ <!-- =================================== AI / Attitude Indicator / Artificial Horizon -->  
+  <animation><type>rotate</type>            
+    <object-name>ball</object-name>
+    <object-name>roll-pointer</object-name>
+    <property>orientation/roll-deg</property>
+    <factor>-1</factor><axis><object-name>rotationRoll</object-name></axis>
+  </animation>    
+  <animation><type>rotate</type> <object-name>ball</object-name>             				<property>orientation/pitch-deg</property>                           <factor>-1</factor> <axis><object-name>rotationPitch</object-name></axis></animation> 
+  <animation><type>rotate</type> <object-name>needle.localiser</object-name> 				<property>instrumentation/nav[0]/heading-needle-deflection</property><factor>10</factor> <axis><object-name>rotateLocaliser</object-name></axis></animation> 
+  <animation><type>rotate</type> <object-name>needle.glideslope</object-name>				<property>instrumentation/nav[0]/gs-needle-deflection</property>     <factor>5</factor>  <axis><object-name>rotateGS</object-name></axis>></animation> 
+
+  <animation><type>select</type> <object-name>needle.localiser</object-name><condition>    <property>instrumentation/nav/nav-loc</property></condition></animation>
+  <animation><type>select</type> <object-name>flag.hdg</object-name><condition><not>       <property>instrumentation/nav/nav-loc</property></not></condition></animation> 
+  <animation><type>select</type> <object-name>needle.glideslope</object-name><condition>   <property>instrumentation/nav/has-gs</property></condition></animation>
+  <animation><type>select</type> <object-name>flag.gs</object-name><condition><not>        <property>instrumentation/nav/has-gs</property></not></condition></animation> 
+  <animation><type>select</type> <object-name>flag.gyro</object-name><condition><less-than><property>engines/engine[0]/rpm</property><value>100</value></less-than></condition></animation>
+ <!--
+ loc-pointer
+ GS-pointer
+  -->
+ <!-- ===================================================================== Altimeter  -->
+  <animation><type>rotate</type><object-name>thousandsAlt</object-name><property>position/altitude-ft</property><factor>0.036</factor><axis><object-name>rotationAlt</object-name></axis></animation>
+  <animation><type>rotate</type><object-name>hundredsAlt</object-name> <property>position/altitude-ft</property><factor>0.36</factor> <axis><object-name>rotationAlt</object-name></axis></animation>
+  <animation><type>textranslate</type><object-name>hpa.000_Alt</object-name>  <property>instrumentation/altimeter/setting-inhg</property><factor>0.003386</factor><step>29.53</step>  <axis><x>0</x><y>-1</y><z>0</z></axis></animation>
+  <animation><type>textranslate</type><object-name>hpa.001_Alt</object-name>  <property>instrumentation/altimeter/setting-inhg</property><factor>0.03386</factor> <step>2.953</step>  <axis><x>0</x><y>-1</y><z>0</z></axis></animation>
+  <animation><type>textranslate</type><object-name>hpa.002_Alt</object-name>  <property>instrumentation/altimeter/setting-inhg</property><factor>0.3386</factor>  <step>0.2953</step> <axis><x>0</x><y>-1</y><z>0</z></axis></animation>
+  <animation><type>textranslate</type><object-name>hpa.003_Alt</object-name>  <property>instrumentation/altimeter/setting-inhg</property><factor>3.386</factor>   <step>0.02953</step><axis><x>0</x><y>-1</y><z>0</z></axis></animation>
+
+ 
+ 
+ 
+ 
+    
+  <animation><type>select</type>
+  	<object-name>cockpit_EXT</object-name>
+	<condition>
+	  <not><property>sim/current-view/internal</property></not>
+	</condition>
+  </animation>
+
+</PropertyList>
