@@ -36,6 +36,22 @@
       <z-m> -0.057 </z-m>
     </offsets>
   </model>-->
+    <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/pfd.xml</path>
+    <offsets>
+      <x-m> -4.535 </x-m>
+      <y-m>  -0.069 </y-m>
+      <z-m> -0.204 </z-m>
+    </offsets>
+  </model>
+  <model>
+    <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/mfd.xml</path>
+    <offsets>
+      <x-m> -4.535 </x-m>
+      <y-m>  0.142 </y-m>
+      <z-m> -0.204 </z-m>
+    </offsets>
+  </model>
 
   <!-- Pilote -->
   <model>
@@ -86,7 +102,7 @@
     </interpolation>
     <axis><object-name>rotationNR</object-name></axis>
   </animation> 
-<!-- ============================================================================== temp --> 
+  <!-- ==================================================================== Engine temp --> 
 <animation><type>rotate</type>
   <object-name>pointerTemp</object-name>
     <property>engines/engine/tot-degc</property>
@@ -97,7 +113,7 @@
     </interpolation>
     <axis><object-name>rotationTempTorque</object-name></axis>
   </animation>   
-  <!-- ==================================================================== Engine temp --> 
+  <!-- ======================================================================== Torque --> 
   <animation><type>rotate</type>
   <object-name>pointerTorque</object-name>
     <property>rotors/gear/total-torque</property>
@@ -109,14 +125,14 @@
     </interpolation>
     <axis><object-name>rotationTempTorque</object-name></axis>
   </animation>  
-  <!-- ==================================================================== VSI / Vertical Speed Indicator -->  
+  <!-- ================================================ VSI / Vertical Speed Indicator -->  
   <animation>
     <type>rotate</type>
     <object-name>needleVSI</object-name>
     <property>instrumentation/vertical-speed-indicator/indicated-speed-fpm</property>
     <interpolation>
-     <entry><ind> -2500 </ind><dep>  -165 </dep></entry>
-     <entry><ind> -2000 </ind><dep>  -142 </dep></entry>
+      <entry><ind> -2500 </ind><dep> -165 </dep></entry>
+      <entry><ind> -2000 </ind><dep> -142 </dep></entry>
       <entry><ind> -1500 </ind><dep> -110 </dep></entry>
       <entry><ind> -1000 </ind><dep>  -82 </dep></entry>
       <entry><ind>  -500 </ind><dep>  -40 </dep></entry>
