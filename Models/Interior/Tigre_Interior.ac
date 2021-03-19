@@ -11,6 +11,7 @@ name "intvitres"
 data 9
 intvitres
 crease 180.000000
+hidden
 numvert 110
 -3.55297 0.467896 -0.302189
 -3.55297 0.051106 -0.4092
@@ -730,7 +731,7 @@ data 9
 interieur
 texture "/Users/cm/Downloads/Tigre_ 19.12.2014/Models/Interior/interior.png"
 crease 180.000000
-locked
+hidden
 numvert 90
 -4.37916 0.392343 -0.241261
 -4.76445 -0.031193 -0.284546
@@ -1337,6 +1338,7 @@ kids 0
 OBJECT group
 name "intvitres"
 loc 0.101139 1.87597 -3.27448
+hidden
 folded
 kids 10
 OBJECT poly
@@ -1344,6 +1346,7 @@ name "disk"
 loc -4.56158 -2.0371 3.23608
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 13
 -0.0746756 -0.0423774 0.106903
 -0.0746756 -0.116381 0.0329034
@@ -1437,6 +1440,7 @@ name "disk"
 loc -4.56158 -2.03709 3.02512
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 13
 -0.0746756 -0.113381 0.0319033
 -0.0746756 0.0286186 0.0319035
@@ -1530,6 +1534,7 @@ name "ASI"
 loc -4.55945 -1.81505 3.21457
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758452 -0.241948 -0.267387
 -0.0758452 -0.233388 -0.263841
@@ -1707,6 +1712,7 @@ name "ASI"
 loc -4.56541 -1.95227 3.16802
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758457 -0.195521 -0.170224
 -0.0758457 -0.202262 -0.195264
@@ -1884,6 +1890,7 @@ name "ASI"
 loc -4.56541 -1.9756 3.09053
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758457 -0.169418 -0.170209
 -0.0758457 -0.163969 -0.167952
@@ -2061,6 +2068,7 @@ name "ASI"
 loc -4.56541 -2.03595 3.08099
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758457 -0.175267 -0.148382
 -0.0758457 -0.181117 -0.170209
@@ -2238,6 +2246,7 @@ name "ASI"
 loc -4.56541 -2.03606 3.15211
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758457 -0.169418 -0.170209
 -0.0758457 -0.163969 -0.167952
@@ -2415,6 +2424,7 @@ name "ASI"
 loc -4.56567 -2.03607 3.2772
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758462 -0.169418 -0.170209
 -0.0758462 -0.163969 -0.167952
@@ -2592,6 +2602,7 @@ name "ASI"
 loc -4.56541 -2.03617 3.22084
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0758457 -0.175267 -0.148382
 -0.0758457 -0.181117 -0.170209
@@ -2769,6 +2780,7 @@ name "ASI"
 loc -4.56567 -2.03603 3.26795
 texture "instrumentGlass.png"
 crease 45.000000
+hidden
 numvert 25
 -0.0753179 -0.177697 0.355876
 -0.0753179 -0.183003 0.336078
@@ -2944,6 +2956,7 @@ kids 0
 OBJECT group
 name "panelCovers"
 loc -1.37835e-07 1.9032 -3.05837
+hidden
 folded
 kids 2
 OBJECT poly
@@ -2951,6 +2964,7 @@ name "coverPanelFront"
 loc -4.59482 -2.06212 3.05837
 texture "TIGRE_panelCovers.png"
 crease 119.368423
+hidden
 numvert 361
 0.00928736 -0.210828 -0.36959
 0.00928736 -0.0502766 -0.336999
@@ -6085,6 +6099,7 @@ data 5
 panel
 texture "TIGRE_panelCovers.png"
 crease 180.000000
+hidden
 numvert 280
 0.113126 -0.429069 0
 0.118016 -0.429069 0.096988
@@ -8333,6 +8348,7 @@ kids 0
 OBJECT group
 name "cabin"
 loc -0.021208 1.24082 -0.0124333
+hidden
 folded
 kids 5
 OBJECT poly
@@ -8340,6 +8356,7 @@ name "roofPanel"
 loc 0.646565 -1.46571 0.0124335
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 24
 -5.00681 0.592133 0.248722
 -4.12493 0.698707 0.282896
@@ -8510,11 +8527,13 @@ kids 0
 OBJECT group
 name "controls"
 loc -0.106041 -1.03787 -1.39917
+hidden
 folded
 kids 3
 OBJECT group
 name "pedals"
 loc -0.173138 -0.016055 -0.212733
+hidden
 folded
 kids 3
 OBJECT group
@@ -8522,6 +8541,7 @@ name "Animation_YAW"
 loc -0.041553 0.174227 1.74886
 data 10
 animated=1
+hidden
 folded
 kids 1
 OBJECT poly
@@ -8537,6 +8557,7 @@ angle1=30.000000
 dataref=sim/cockpit2/controls/yoke_heading_ratio
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.0206347 -0.073981 -5.37682
 -0.0206347 -0.073981 -5.81393
@@ -8550,6 +8571,7 @@ kids 0
 OBJECT group
 name "pedalsPilot"
 loc 0.39948 0.0656598 0.02167
+hidden
 folded
 kids 2
 OBJECT group
@@ -8557,6 +8579,7 @@ name "AnimationPedalLeft"
 loc 0.233269 0.108567 1.72719
 data 10
 animated=1
+hidden
 folded
 kids 4
 OBJECT poly
@@ -8572,6 +8595,7 @@ angle1=30.000000
 dataref=sim/cockpit2/controls/yoke_heading_ratio
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.0206351 -0.0739806 -0.177512
 -0.0206351 -0.0739806 -0.236163
@@ -8587,6 +8611,7 @@ name "disk"
 loc -5.11602 -1.15973 -0.0535228
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 91
 -0.0271029 -0.089386 -0.0474391
 -0.0432563 -0.0865214 -0.0474391
@@ -9298,6 +9323,7 @@ name "disk"
 loc -5.11498 -1.16005 0.111471
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 37
 -0.0088892 -0.0696402 -0.165587
 -0.0110598 -0.0658226 -0.165587
@@ -9577,6 +9603,7 @@ name "rect"
 loc -2.80196 -0.360317 -0.0585938
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 27
 -2.38046 -0.871176 -0.0356088
 -2.37097 -0.86528 -0.0356088
@@ -9750,6 +9777,7 @@ name "AnimationPedalRight"
 loc 0.311269 0.108567 1.72719
 data 10
 animated=1
+hidden
 folded
 kids 4
 OBJECT poly
@@ -9765,6 +9793,7 @@ angle1=-30.000000
 dataref=sim/cockpit2/controls/yoke_heading_ratio
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.0206351 -0.0739806 -0.236163
 -0.0206351 -0.0739806 -0.177512
@@ -9780,6 +9809,7 @@ name "disk"
 loc -5.19402 -1.15973 -0.145798
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 91
 -0.0206351 -0.0904815 0
 -0.0140676 -0.0894861 0
@@ -10491,6 +10521,7 @@ name "disk"
 loc -5.19298 -1.16005 -0.194931
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 37
 -0.0206351 -0.0739813 0
 -0.0088892 -0.0783224 0
@@ -10770,6 +10801,7 @@ name "rect"
 loc -2.87996 -0.360317 -0.15087
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 27
 -2.38053 -0.871299 0
 -2.35988 -0.865764 0
@@ -10943,6 +10975,7 @@ name "pedalFlange"
 loc -4.53692 -1.14981 1.62296
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 56
 -0.110653 -0.0984324 -0.0175939
 -0.110653 -0.0984324 -0.0750811
@@ -11288,6 +11321,7 @@ name "collectiveSticksAnimated"
 loc -0.214293 0.087399 1.4116
 data 10
 animated=1
+hidden
 folded
 kids 3
 OBJECT poly
@@ -11295,6 +11329,7 @@ name "collectivel_box_Right"
 loc -3.62642 -1.21847 0.33991
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 8
 -0.182274 -0.106573 -0.0337865
 -0.0346549 0.0100596 -0.0337865
@@ -11364,6 +11399,7 @@ value2=12.000000
 angle2=36.000000
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.0706353 -0.0839813 -0.995528
 -0.0706353 -0.0839813 0.00447169
@@ -11377,22 +11413,26 @@ kids 0
 OBJECT group
 name "group"
 loc -0.24445 -0.0741112 -1.76845
+hidden
 kids 2
 OBJECT group
 name "collective"
 loc 0.829695 -0.444747 2.07916
+hidden
 kids 9
 OBJECT group
 name "switchAnimation"
 loc -0.369933 0.589599 -2.29583
 data 10
 animated=1
+hidden
 kids 3
 OBJECT poly
 name "switchMount"
 loc -4.2886 -0.996987 2.3604
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 78
 -0.0704122 -0.083595 0.00159967
 -0.0705276 -0.0837944 0.00299966
@@ -11835,6 +11875,7 @@ angle1=-30.000000
 dataref=sim/cockpit2/switches/landing_lights_switch[0]
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.0706348 -0.0839813 0.0417795
 -0.0706348 -0.0839813 0.031404
@@ -11857,6 +11898,7 @@ manip_v1_min=1.000000
 manip_cursor=button
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 169
 -0.0734439 -0.0888462 0.00169039
 -0.0741763 -0.0884237 0.00146377
@@ -13198,6 +13240,7 @@ name "disk"
 loc -0.864275 -0.805077 -0.473184
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 61
 -3.84717 0.306664 0.522509
 -3.8474 0.306794 0.521555
@@ -13675,6 +13718,7 @@ name "disk"
 loc -4.63865 -0.454417 0.0302912
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 180
 -0.0737214 -0.0592556 0.00525796
 -0.0763955 -0.0638874 0.0145211
@@ -15039,6 +15083,7 @@ name "rect"
 loc -4.69028 -0.480467 0.0284842
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 104
 -0.0465665 -0.0766666 -0.015911
 -0.0471206 -0.0763466 0.0391787
@@ -15755,6 +15800,7 @@ name "rect"
 loc -4.37021 0.0834229 0.0323822
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 8
 -0.369279 -0.568573 -0.00822437
 -0.340979 -0.584913 -0.00822437
@@ -15806,6 +15852,7 @@ name "disk"
 loc -0.368805 -2.09351 -0.672556
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 25
 -4.34436 1.59909 0.684484
 -4.34361 1.59865 0.684985
@@ -15995,6 +16042,7 @@ name "rect"
 loc -4.3752 0.086293 -0.00532079
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 8
 -0.362355 -0.57257 -0.00952315
 -0.345518 -0.582291 -0.00609422
@@ -16046,6 +16094,7 @@ name "disk"
 loc 4.79762 -2.23173 -1.30445
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 25
 -9.50651 1.7326 1.36898
 -9.5071 1.73294 1.36648
@@ -16235,6 +16284,7 @@ name "rect"
 loc -4.37581 0.086653 0.0510812
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 8
 -0.362852 -0.570377 0.00685096
 -0.345757 -0.580248 0.00685096
@@ -16286,6 +16336,7 @@ name "leather"
 loc -3.40568 -1.13215 2.13979
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 36
 -0.120521 -0.164107 -0.061677
 -0.120521 -0.164107 -0.0506096
@@ -16601,6 +16652,7 @@ kids 0
 OBJECT group
 name "cyclic"
 loc 0.387432 -0.071344 -1.19886
+hidden
 folded
 kids 1
 OBJECT group
@@ -16608,12 +16660,14 @@ name "Animation"
 loc 0.0985714 0.158743 2.61045
 data 10
 animated=1
+hidden
 kids 6
 OBJECT poly
 name "stickl_mount_sphere"
 loc -4.69975 -1.24345 0.00144291
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 121
 -0.0706353 -0.0721283 0
 -0.0592008 -0.0731099 -0.00306368
@@ -17568,6 +17622,7 @@ dataref=sim/joystick/yoke_pitch_ratio
 poly_os=0.000000
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.0706353 -0.0839813 -0.136488
 -0.0706353 -0.0839813 0.136488
@@ -17592,6 +17647,7 @@ dataref=sim/joystick/yoke_roll_ratio
 poly_os=0.000000
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 2
 -0.271584 -0.0839813 0
 0.128416 -0.0839813 0
@@ -17605,16 +17661,19 @@ kids 0
 OBJECT group
 name "cyclic_JB"
 loc -0.373682 0.170618 -2.01859
+hidden
 kids 3
 OBJECT group
 name "groupBox"
 loc -0.0131662 0.165832 0.0392718
+hidden
 kids 9
 OBJECT poly
 name "disk"
 loc 0.00533846 0.986885 -1.16808
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 1
 -0.0706353 -0.0423813 0
 kids 0
@@ -17623,6 +17682,7 @@ name "disk"
 loc -4.31089 -1.00363 1.97949
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0655403 -0.0398793 -0.00129366
 -0.0660896 -0.0367541 -0.00526094
@@ -18484,6 +18544,7 @@ name "disk"
 loc -4.29854 -1.02532 2.04226
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0662274 -0.040792 -0.00042367
 -0.0751367 -0.0474796 -0.00787997
@@ -19345,6 +19406,7 @@ name "disk"
 loc -4.30413 -1.01151 2.02815
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0650849 -0.0403798 -0.000533819
 -0.075788 -0.0477142 -0.00781751
@@ -20206,6 +20268,7 @@ name "disk"
 loc -4.29704 -1.03207 2.02483
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0653625 -0.0398154 -0.00131083
 -0.0705438 -0.0383601 -0.00483274
@@ -21067,6 +21130,7 @@ name "disk"
 loc -4.3038 -1.02419 1.97618
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0652623 -0.0404439 -0.000516653
 -0.0764518 -0.0479536 -0.00775385
@@ -21928,6 +21992,7 @@ name "disk"
 loc -4.30985 -1.01359 2.00228
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0685802 -0.0416405 -0.000197411
 -0.0724683 -0.0449727 -0.00444221
@@ -22789,6 +22854,7 @@ name "disk"
 loc -4.30404 -1.03042 1.99957
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 109
 -0.0691371 -0.0405118 -0.0017519
 -0.0701699 -0.0399981 -0.00272465
@@ -23650,6 +23716,7 @@ name "rect"
 loc -4.33283 -1.02915 2.01198
 texture "TIGRE_cabin.png"
 crease 81.473686
+hidden
 numvert 136
 -0.0983529 -0.0341923 0.025579
 -0.097774 -0.0331061 0.0260408
@@ -24582,6 +24649,7 @@ name "disk"
 loc -4.29759 -0.954807 2.03538
 texture "TIGRE_cabin.png"
 crease 90.000000
+hidden
 numvert 252
 -0.0361724 -0.053951 0.0055089
 -0.0289559 -0.0493042 0.0029695
@@ -26522,6 +26590,7 @@ name "cyclicPole"
 loc -4.46187 -1.25162 2.01852
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 228
 0.0700974 0.188428 -0.0155885
 0.0718036 0.182064 -0.00899982
@@ -28270,6 +28339,7 @@ name "stickl_elast"
 loc -6.94036 -1.70855 -0.806568
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 50
 2.16975 0.404248 0.806516
 2.16975 0.388712 0.806516
@@ -28784,6 +28854,7 @@ name "stickl_elast_fix"
 loc -6.93971 -1.58106 -1.08228
 texture "TIGRE_cabin.png"
 crease 45.000000
+hidden
 numvert 50
 2.19714 0.288662 1.07412
 2.19424 0.288662 1.06666
@@ -29296,6 +29367,7 @@ kids 0
 OBJECT group
 name "interior"
 loc 0.021208 0.746083 1.27516
+hidden
 folded
 kids 3
 OBJECT poly
@@ -29305,6 +29377,7 @@ data 4
 fond
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 74
 -2.17401 0.900485 -4.57764e-05
 -2.17401 0.900485 0.261196
@@ -29799,6 +29872,7 @@ data 12
 siegearriere
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 121
 -2.24414 0.520025 -0.140072
 -2.22103 0.324325 -0.140072
@@ -30718,6 +30792,7 @@ data 10
 siegeavant
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 121
 -3.78859 0.135424 -0.140072
 -3.76909 -0.0602767 -0.140072
@@ -31635,6 +31710,7 @@ name "back wall"
 loc -1.16727 -3.24056 0.0124333
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 9
 -0.75515 0.729969 -0.493335
 -0.75515 0.729969 0
@@ -31682,6 +31758,7 @@ data 4
 fond
 texture "TIGRE_cabin.png"
 crease 180.000000
+hidden
 numvert 37
 0.378039 0.0238657 0.354487
 0.378039 0.0237657 -0.354485
@@ -31922,6 +31999,7 @@ kids 0
 OBJECT group
 name "mirrors"
 loc -9.0003e-06 2.32937 -3.12758
+hidden
 folded
 kids 2
 OBJECT poly
@@ -31929,6 +32007,7 @@ name "mirror"
 loc -4.31606 -1.99974 3.31537
 texture "mirror.png"
 crease 45.000000
+hidden
 numvert 541
 -0.0581317 -0.0446882 0.00451374
 -0.0588584 -0.0491223 0.00410485
@@ -36222,6 +36301,7 @@ name "mirror"
 loc -4.31604 -1.99974 2.93981
 texture "mirror.png"
 crease 45.000000
+hidden
 numvert 541
 -0.0728793 -0.091732 0.00846243
 -0.0696359 -0.0897646 0.0163093
@@ -40513,8 +40593,83 @@ kids 0
 OBJECT group
 name "cockpit_INT"
 loc 0.0371378 0.114041 -2.21044
-folded
-kids 19
+kids 23
+OBJECT poly
+name "canvas_IFF_squawk"
+loc -4.41941 -0.478111 1.81283
+texture "screen-test.png"
+crease 180.000000
+numvert 4
+-0.0467925 -0.0703867 0.099133
+-0.0467925 -0.0643873 0.0127805
+-0.0422435 -0.0747947 0.0986474
+-0.0422435 -0.0687954 0.0122949
+numsurf 1
+SURF 0x30
+mat 3
+refs 4
+3 1 0.4375
+1 1 0.5625
+0 -5.96046e-08 0.5625
+2 -5.96046e-08 0.4375
+kids 0
+OBJECT poly
+name "canvas_COM2_frequency"
+loc -4.41941 -0.478111 1.81283
+texture "screen-test.png"
+crease 180.000000
+numvert 4
+-0.0706167 -0.0537901 0.0473722
+-0.0706167 -0.0609526 0.143935
+-0.0769787 -0.0485274 0.0479152
+-0.0769787 -0.05569 0.144478
+numsurf 1
+SURF 0x30
+mat 3
+refs 4
+0 1 0.4375
+2 1 0.5625
+3 -5.96046e-08 0.5625
+1 -5.96046e-08 0.4375
+kids 0
+OBJECT poly
+name "canvas_NAV1_frequency"
+loc -4.41941 -0.478111 1.81283
+texture "screen-test.png"
+crease 180.000000
+numvert 4
+-0.115396 -0.0209821 0.00817046
+-0.115396 -0.0269082 0.076017
+-0.122375 -0.0166279 0.00855196
+-0.122375 -0.022554 0.0763985
+numsurf 1
+SURF 0x30
+mat 3
+refs 4
+0 1 0.4375
+2 1 0.5625
+3 -5.96046e-08 0.5625
+1 -5.96046e-08 0.4375
+kids 0
+OBJECT poly
+name "canvas_COM1_frequency"
+loc -4.41941 -0.48513 1.89267
+texture "screen-test.png"
+crease 180.000000
+numvert 4
+-0.115396 -0.0209358 0.00813913
+-0.115396 -0.0268488 0.0757256
+-0.122375 -0.0165912 0.00851917
+-0.122375 -0.0225042 0.0761056
+numsurf 1
+SURF 0x30
+mat 3
+refs 4
+0 1 0.4375
+2 1 0.5625
+3 -5.96046e-08 0.5625
+1 -5.96046e-08 0.4375
+kids 0
 OBJECT poly
 name "panelMain"
 loc -4.50866 -0.276577 2.21044
@@ -64414,63 +64569,10 @@ kids 0
 OBJECT group
 name "CommsBoxes"
 loc 0.281202 1.5081 -0.997078
-folded
-kids 6
-OBJECT poly
-name "windowBases"
-loc -4.70061 -1.99323 2.88975
-crease 180.000000
-numvert 16
--0.122375 -0.0225042 0.0761056
--0.122375 -0.0165912 0.00851917
--0.122375 -0.0155447 -0.00344348
--0.122375 -0.00960875 -0.0712912
--0.115396 -0.0268488 0.0757256
--0.115396 -0.0209358 0.00813913
--0.115396 -0.0198891 -0.00382376
--0.115396 -0.0139532 -0.0716715
--0.0769825 -0.0499737 0.0646353
--0.0769825 -0.0415083 -0.0321238
--0.0706205 -0.0539335 0.0642889
--0.0706205 -0.0454682 -0.0324702
--0.0467901 -0.0649446 0.0192907
--0.0467901 -0.0573688 -0.0672996
--0.0422411 -0.0677762 0.0190427
--0.0422411 -0.0602006 -0.0675473
-numsurf 4
-SURF 0x30
-mat 3
-refs 4
-15 0.824711 0.411651
-13 0.824711 0.431365
-12 0.503251 0.431365
-14 0.503251 0.411651
-SURF 0x30
-mat 3
-refs 4
-11 0.797334 0.439106
-9 0.797334 0.462936
-8 0.504645 0.462936
-10 0.504645 0.439106
-SURF 0x30
-mat 3
-refs 4
-7 0.922008 0.469983
-3 0.922008 0.495318
-2 0.717416 0.495318
-6 0.717416 0.469983
-SURF 0x30
-mat 3
-refs 4
-5 0.712669 0.47116
-1 0.712669 0.497309
-0 0.504203 0.497309
-4 0.504203 0.47116
-kids 0
+kids 5
 OBJECT group
 name "COM1group"
 loc -0.0401652 0.0221028 -0.00804925
-folded
 kids 8
 OBJECT poly
 name "COM1_onOff"

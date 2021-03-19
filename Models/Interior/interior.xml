@@ -36,25 +36,17 @@
       <z-m> -0.057 </z-m>
     </offsets>
   </model>-->
-    <model>
+  <model>
     <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/pfd.xml</path>
-    <offsets>
-      <x-m> -4.535 </x-m>
-      <y-m>  -0.069 </y-m>
-      <z-m> -0.204 </z-m>
-    </offsets>
+    <offsets><x-m> -4.541 </x-m><y-m> -0.069 </y-m><z-m> -0.204 </z-m></offsets>
   </model>
   <model>
     <path>Aircraft/Tigre/Models/Interior/Panel/Instruments/pilotmfd/mfd.xml</path>
-    <offsets>
-      <x-m> -4.535 </x-m>
-      <y-m>  0.142 </y-m>
-      <z-m> -0.204 </z-m>
-    </offsets>
+    <offsets><x-m> -4.541 </x-m><y-m>  0.142 </y-m><z-m> -0.204 </z-m></offsets>
   </model>
 
   <!-- Pilote -->
-  <model>
+  <model> <name>Pilote</name>
     <path>Aircraft/Tigre/Models/Pilot/pilot.xml</path>
     <offsets>
       <x-m> -3.964 </x-m>
@@ -192,6 +184,7 @@
     
   <animation><type>select</type>
   	<object-name>cockpit_EXT</object-name>
+  	<object-name>Pilote</object-name>
 	<condition>
 	  <not><property>sim/current-view/internal</property></not>
 	</condition>

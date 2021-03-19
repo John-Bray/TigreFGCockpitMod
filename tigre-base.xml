@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <sim include="Systems/views.xml">
+    
+    <description>Eurocopter EC 665 (Yasim)</description>
+    <author>BARANGER Emmanuel (3D)</author>
+    <status>alpha 0.3</status>
+    <license>GPL v2</license>
+    
+    <fuel-fraction>0.8</fuel-fraction>
+    
+    <startup>
+      <splash-texture>Aircraft/Tigre/tigre-splash.png</splash-texture>
+    </startup> 
+    
+    <sound>
+      <path>Aircraft/Tigre/Sounds/tigre-sound.xml</path>
+    </sound>
+    
+    <model>
+      <path archive="y">Aircraft/Tigre/Models/tigre.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <tigre>
+        <state type="int">0</state>
+        <engine type="float">0.0</engine>
+        <rotor-step-deg type="float">-1.0</rotor-step-deg>
+      </tigre>
+      <turret n="0">
+        <heading>0</heading>
+        <pitch>10</pitch>
+      </turret>
+    </model>
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="/smoke/particlepersec"> 50 </int>             <!--  7 particlepersec -->
+        <int type="int" n="10" alias="/controls/armament/trigger">0</int>          <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1" alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m">  0 </float>                     <!--  2 altitude for MP shadow -->
+        <float n="3" alias="/position/altitude-ft">  0 </float>                    <!--  3 altitude for smoke -->
+        <float n="4" alias="/engines/engine[0]/rpm"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <hud>
+      <path n="1">Aircraft/Tigre/Hud/hud.xml</path>
+      <visibility n="1">true</visibility>
+      <palette>
+        <color n="0">
+          <alpha type="float">0.85</alpha>
+          <antialiased type="bool">true</antialiased>
+          <brightness type="float">0.85</brightness>
+          <transparent type="bool">true</transparent>
+          <red type="float">0.38</red>
+          <green type="float">1.0</green>
+          <blue type="float">0.22</blue>
+        </color>
+        <color n="1">
+          <alpha type="float">0.85</alpha>
+          <antialiased type="bool">true</antialiased>
+          <brightness type="float">0.85</brightness>
+          <transparent type="bool">true</transparent>
+          <red type="float">1.0</red>
+          <green type="float">0.2</green>
+          <blue type="float">0.0</blue>
+        </color>
+      </palette>
+    </hud>
+    
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+    
+    <weight n="1">
+      <name>Co-Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+    
+    <help include="Systems/help.xml"/>
+    
+    <menubar include="Dialogs/tigre-menu.xml"/>
+    
+  </sim>
+  
+  <controls>
+    <engines>
+      <engine n="0">
+        <magnetos>0</magnetos>
+      </engine>
+      <engine n="1">
+        <magnetos>0</magnetos>
+      </engine>
+    </engines>
+    <gear>
+      <brake-parking>1</brake-parking>
+    </gear>
+    <rotor>
+      <reltarget>1</reltarget>
+      <maxreltorque>1</maxreltorque>
+    </rotor>
+  </controls>
+  
+  <instrumentation>
+    <gsdi>
+      <serviceable type="bool">true</serviceable>
+      <enabled type="bool">true</enabled>
+    </gsdi>
+  </instrumentation>
+  
+  <input>
+    <keyboard include="Systems/tigre-keyboard.xml"/>
+  </input>
+  
+  <environment>
+    <turbulence>
+      <use-cloud-turbulence>true</use-cloud-turbulence>
+    </turbulence>
+  </environment>
+  
+  <rotors>
+    <main>
+      <rpm type="double">0</rpm>
+      <cone-deg type="double">0</cone-deg>
+      <cone1-deg type="double">0</cone1-deg>
+      <cone2-deg type="double">0</cone2-deg>
+      <cone3-deg type="double">0</cone3-deg>
+      <cone4-deg type="double">0</cone4-deg>
+    </main>
+  </rotors>
+  
+  <nasal>
+    <doors>
+      <file>Aircraft/Tigre/Nasal/doors.nas</file>
+    </doors>
+    <tigre>
+      <file>Aircraft/Tigre/Nasal/immat.nas</file>
+      <file>Aircraft/Tigre/Nasal/light.nas</file>
+      <file>Aircraft/Tigre/Nasal/tigre.nas</file>
+      <file>Aircraft/Tigre/Nasal/liveries.nas</file>
+      <file>Aircraft/Tigre/Nasal/bladevisible.nas</file>
+      <file>Aircraft/Tigre/Nasal/fcs-management.nas</file>
+
+      <file>Aircraft/Generic/helicopter-fcs.nas</file>
+    </tigre>
+    <turrets>
+      <file>Aircraft/Tigre/Nasal/turrets.nas</file>
+    </turrets>
+    <chronograph>
+      <file>Aircraft/Tigre/Models/Interior/Panel/Instruments/chronograph/chronograph.nas</file>
+    </chronograph> 
+    <canvas_test>
+    	<file>Aircraft/Tigre/Models/Interior/canvasDisplays.nas</file>
+    </canvas_test>
+   
+  </nasal>
+  
+</PropertyList>

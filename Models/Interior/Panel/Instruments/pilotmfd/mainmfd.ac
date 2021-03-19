@@ -4,20 +4,20 @@ OBJECT world
 kids 33
 OBJECT poly
 name "bck"
-loc 0.004756 -0.000880997 -0.000914
+loc 0 0.000163794 -5.50237e-07
 data 3
 bck
 texture "mfd.png"
 crease 180.000000
 numvert 8
-0 -0.075277 0.065638
-0 -0.075277 -0.065636
-0 0.074949 0.065636
-0 0.074949 -0.065637
-0 0.072614 0.068114
-0 -0.072287 0.068114
-0 -0.072287 -0.068113
-0 0.072614 -0.068113
+0 -0.0751638 0.0722742
+0 -0.0751638 -0.072272
+0 0.0748362 0.072272
+0 0.0748362 -0.0722731
+0 0.0725048 0.0750006
+0 -0.0721783 0.0750006
+0 -0.0721783 -0.0749995
+0 0.0725048 -0.0749995
 numsurf 3
 SURF 0x0
 mat 0
@@ -43,7 +43,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract0"
-loc 0.005244 0.02155 0.010561
+loc 0.001244 0.02155 0.010561
 data 7
 caract0
 texture "mfd.png"
@@ -64,7 +64,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract1"
-loc 0.005244 0.017384 -0.003699
+loc 0.001244 0.017384 -0.003699
 data 7
 caract1
 texture "mfd.png"
@@ -85,7 +85,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract10"
-loc 0.005244 -0.007718 -0.050045
+loc 0.001244 -0.007718 -0.050045
 data 8
 caract10
 texture "mfd.png"
@@ -106,7 +106,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract11"
-loc 0.005244 -0.035577 0.039158
+loc 0.001244 -0.035577 0.039158
 data 8
 caract11
 texture "mfd.png"
@@ -127,7 +127,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract12"
-loc 0.005244 -0.035577 0.032863
+loc 0.001244 -0.035577 0.032863
 data 8
 caract12
 texture "mfd.png"
@@ -148,7 +148,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract13"
-loc 0.005244 -0.035768 -0.051756
+loc 0.001244 -0.035768 -0.051756
 data 8
 caract13
 texture "mfd.png"
@@ -169,7 +169,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract14"
-loc 0.005244 -0.035768 -0.058051
+loc 0.001244 -0.035768 -0.058051
 data 8
 caract14
 texture "mfd.png"
@@ -190,7 +190,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract15"
-loc 0.005244 -0.058312 0.040407
+loc 0.001244 -0.058312 0.040407
 data 8
 caract15
 texture "mfd.png"
@@ -211,7 +211,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract16"
-loc 0.005244 -0.058312 0.0365
+loc 0.001244 -0.058312 0.0365
 data 8
 caract16
 texture "mfd.png"
@@ -232,7 +232,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract17"
-loc 0.005244 -0.066531 0.008459
+loc 0.001244 -0.066531 0.008459
 data 8
 caract17
 texture "mfd.png"
@@ -253,7 +253,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract18"
-loc 0.005244 -0.058312 -0.050325
+loc 0.001244 -0.058312 -0.050325
 data 8
 caract18
 texture "mfd.png"
@@ -274,7 +274,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract19"
-loc 0.005244 -0.058312 -0.054233
+loc 0.001244 -0.058312 -0.054233
 data 8
 caract19
 texture "mfd.png"
@@ -295,7 +295,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract2"
-loc 0.005244 0.021304 -0.018017
+loc 0.001244 0.021304 -0.018017
 data 7
 caract2
 texture "mfd.png"
@@ -316,7 +316,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract3"
-loc 0.005244 -0.007718 0.04363
+loc 0.001244 -0.007718 0.04363
 data 7
 caract3
 texture "mfd.png"
@@ -337,7 +337,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract4"
-loc 0.005244 -0.007718 0.039722
+loc 0.001244 -0.007718 0.039722
 data 7
 caract4
 texture "mfd.png"
@@ -358,7 +358,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract5"
-loc 0.005244 -0.023371 0.011716
+loc 0.001244 -0.023371 0.011716
 data 7
 caract5
 texture "mfd.png"
@@ -379,7 +379,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract6"
-loc 0.005244 -0.023371 0.005789
+loc 0.001244 -0.023371 0.005789
 data 7
 caract6
 texture "mfd.png"
@@ -400,7 +400,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract7"
-loc 0.005244 -0.023371 -0.012714
+loc 0.001244 -0.023371 -0.012714
 data 7
 caract7
 texture "mfd.png"
@@ -421,7 +421,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract8"
-loc 0.005244 -0.023371 -0.018642
+loc 0.001244 -0.023371 -0.018642
 data 7
 caract8
 texture "mfd.png"
@@ -442,7 +442,7 @@ refs 4
 kids 0
 OBJECT poly
 name "caract9"
-loc 0.005244 -0.007718 -0.046137
+loc 0.001244 -0.007718 -0.046137
 data 7
 caract9
 texture "mfd.png"
@@ -463,7 +463,7 @@ refs 4
 kids 0
 OBJECT poly
 name "graduations"
-loc 0.00518 -0.017929 -0.001733
+loc 0.00118 -0.017929 -0.001733
 data 11
 graduations
 texture "mfd.png"
@@ -3313,7 +3313,7 @@ refs 4
 kids 0
 OBJECT poly
 name "index0"
-loc 0.005244 0.02688 0.030563
+loc 0.001244 0.02688 0.030563
 data 6
 index0
 texture "mfd.png"
@@ -3387,7 +3387,7 @@ refs 4
 kids 0
 OBJECT poly
 name "index1"
-loc 0.005244 -0.023239 -2.32831e-10
+loc 0.001244 -0.023239 -6.98493e-10
 data 6
 index1
 texture "mfd.png"
@@ -3461,7 +3461,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle0"
-loc 0.005244 0.02688 0.010126
+loc 0.001244 0.02688 0.010126
 data 7
 needle0
 texture "mfd.png"
@@ -3482,7 +3482,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle1"
-loc 0.005244 -0.018152 0.010126
+loc 0.001244 -0.018152 0.010126
 data 7
 needle1
 texture "mfd.png"
@@ -3503,7 +3503,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle2"
-loc 0.005244 -0.058956 0.010126
+loc 0.001244 -0.058956 0.010126
 data 7
 needle2
 texture "mfd.png"
@@ -3524,7 +3524,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle3"
-loc 0.005154 2.20035e-05 0.048756
+loc 0.001154 2.20003e-05 0.048756
 data 7
 needle3
 texture "mfd.png"
@@ -3545,7 +3545,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle4"
-loc 0.005154 -0.034919 0.050181
+loc 0.001154 -0.034919 0.050181
 data 7
 needle4
 texture "mfd.png"
@@ -3566,7 +3566,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle5"
-loc 0.005154 -0.052696 0.052242
+loc 0.001154 -0.052696 0.052242
 data 7
 needle5
 texture "mfd.png"
@@ -3587,7 +3587,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle6"
-loc 0.005154 -3.49965e-05 -0.041201
+loc 0.001154 -3.49997e-05 -0.041201
 data 7
 needle6
 texture "mfd.png"
@@ -3608,7 +3608,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle7"
-loc 0.005154 -0.034929 -0.04033
+loc 0.001154 -0.034929 -0.04033
 data 7
 needle7
 texture "mfd.png"
@@ -3629,7 +3629,7 @@ refs 4
 kids 0
 OBJECT poly
 name "needle8"
-loc 0.005154 -0.052696 -0.038592
+loc 0.001154 -0.052696 -0.038592
 data 7
 needle8
 texture "mfd.png"

@@ -4,28 +4,28 @@ OBJECT world
 kids 32
 OBJECT poly
 name "ai.background"
-loc 0.0040505 0.00263 -0.000132
+loc 0 0.0084228 0.000826394
 data 13
 ai.background
 texture "attitude_indicator.png"
 crease 180.000000
 numvert 4
-0 -0.09894 0.071358
-0 0.078961 0.071358
-0 -0.09894 -0.072948
-0 0.078961 -0.072948
+0 -0.0834228 0.0741736
+0 0.0665772 0.0741736
+0 -0.0834228 -0.0758264
+0 0.0665772 -0.0758264
 numsurf 1
 SURF 0x0
 mat 0
 refs 4
-1 0.288137 0.606563
-0 0.288137 0.286529
-2 0.761263 0.286529
-3 0.761263 0.606563
+1 0.288137 0.653583
+0 0.288137 0.214192
+2 0.761263 0.214192
+3 0.761263 0.653583
 kids 0
 OBJECT poly
 name "ai.cursor.C"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 11
 ai.cursor.C
 texture "pfd.png"
@@ -51,7 +51,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ai.cursor.L"
-loc 0.0053245 0.022353 2.32831e-10
+loc 0.0013245 0.022353 -3.49245e-10
 data 11
 ai.cursor.L
 texture "pfd.png"
@@ -84,7 +84,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ai.cursor.R"
-loc 0.0053245 0.022353 2.32831e-10
+loc 0.0013245 0.022353 -3.49245e-10
 data 11
 ai.cursor.R
 texture "pfd.png"
@@ -117,7 +117,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ai.fd.bars"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 10
 ai.fd.bars
 texture "pfd.png"
@@ -147,7 +147,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai.pitch.indicator"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 18
 ai.pitch.indicator
 texture "pitchscale.png"
@@ -161,7 +161,7 @@ numvert 27
 0 -0.012859 -0.031046
 0 -0.006555 -0.032958
 0 0 -0.033604
-0 0.006556 -0.032958
+0 0.00655599 -0.032958
 0 0.01286 -0.031046
 0 0.01867 -0.027941
 0 0.023762 -0.023762
@@ -175,7 +175,7 @@ numvert 27
 0 0.023762 0.023762
 0 0.01867 0.027941
 0 0.01286 0.031046
-0 0.006556 0.032958
+0 0.00655599 0.032958
 0 0 0.033604
 0 -0.006555 0.032958
 0 -0.012859 0.031046
@@ -340,7 +340,7 @@ refs 3
 kids 0
 OBJECT poly
 name "ai.roll.indicator"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 17
 ai.roll.indicator
 texture "pfd.png"
@@ -386,7 +386,7 @@ refs 4
 kids 0
 OBJECT poly
 name "ai.roll.ref"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 11
 ai.roll.ref
 texture "pfd.png"
@@ -747,7 +747,7 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.bug"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 7
 alt.bug
 texture "pfd.png"
@@ -808,7 +808,7 @@ refs 3
 kids 0
 OBJECT poly
 name "alt.cursor"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 10
 alt.cursor
 texture "pfd.png"
@@ -827,7 +827,7 @@ refs 3
 kids 0
 OBJECT poly
 name "alt.cursor.00011"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 16
 alt.cursor.00011
 texture "pfd.png"
@@ -848,15 +848,15 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.cursor.00100"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 16
 alt.cursor.00100
 texture "pfd.png"
 crease 180.000000
 numvert 4
-0.000204999 0.004556 -0.040838
+0.000204999 0.00455599 -0.040838
 0.000204999 -0.003816 -0.040838
-0.000204999 0.004556 -0.043372
+0.000204999 0.00455599 -0.043372
 0.000204999 -0.003816 -0.043372
 numsurf 1
 SURF 0x0
@@ -869,14 +869,14 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.cursor.01000"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 16
 alt.cursor.01000
 texture "pfd.png"
 crease 180.000000
 numvert 4
-0.000204999 0.004556 -0.038303
-0.000204999 0.004556 -0.040838
+0.000204999 0.00455599 -0.038303
+0.000204999 0.00455599 -0.040838
 0.000204999 -0.003816 -0.038303
 0.000204999 -0.003816 -0.040838
 numsurf 1
@@ -890,16 +890,16 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.cursor.10000"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 16
 alt.cursor.10000
 texture "pfd.png"
 crease 180.000000
 numvert 4
 0.000204999 -0.003816 -0.035769
-0.000204999 0.004556 -0.035769
+0.000204999 0.00455599 -0.035769
 0.000204999 -0.003816 -0.038303
-0.000204999 0.004556 -0.038303
+0.000204999 0.00455599 -0.038303
 numsurf 1
 SURF 0x0
 mat 0
@@ -911,7 +911,7 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.tape"
-loc 0.0053245 0.026791 -0.009874
+loc 0.0013245 0.026791 -0.009874
 data 8
 alt.tape
 texture "alt.tape.png"
@@ -932,7 +932,7 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.vs.bug"
-loc 0.0053245 0.026791 -0.010199
+loc 0.0013245 0.026791 -0.010199
 data 10
 alt.vs.bug
 texture "pfd.png"
@@ -962,7 +962,7 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.vs.ptr"
-loc 0.0053245 0.026791 -0.010199
+loc 0.0013245 0.026791 -0.010199
 data 10
 alt.vs.ptr
 texture "pfd.png"
@@ -990,7 +990,7 @@ refs 4
 kids 0
 OBJECT poly
 name "alt.vs.ref"
-loc 0.0053245 0.026791 -0.010199
+loc 0.0013245 0.026791 -0.010199
 data 10
 alt.vs.ref
 texture "pfd.png"
@@ -1021,7 +1021,7 @@ refs 4
 kids 0
 OBJECT poly
 name "asi.bug"
-loc 0.0053245 0.026791 0.010778
+loc 0.0013245 0.026791 0.010778
 data 7
 asi.bug
 texture "pfd.png"
@@ -1082,7 +1082,7 @@ refs 3
 kids 0
 OBJECT poly
 name "asi.cursor.001"
-loc 0.0053245 0.026791 0.010778
+loc 0.0013245 0.026791 0.010778
 data 14
 asi.cursor.001
 texture "pfd.png"
@@ -1124,7 +1124,7 @@ refs 4
 kids 0
 OBJECT poly
 name "asi.cursor.010"
-loc 0.0053245 0.026791 0.010778
+loc 0.0013245 0.026791 0.010778
 data 14
 asi.cursor.010
 texture "pfd.png"
@@ -1145,7 +1145,7 @@ refs 4
 kids 0
 OBJECT poly
 name "asi.cursor.100"
-loc 0.0053245 0.026791 0.010778
+loc 0.0013245 0.026791 0.010778
 data 14
 asi.cursor.100
 texture "pfd.png"
@@ -1166,7 +1166,7 @@ refs 4
 kids 0
 OBJECT poly
 name "asi.tape"
-loc 0.0053245 0.026791 0.010778
+loc 0.0013245 0.026791 0.010778
 data 8
 asi.tape
 texture "asi.tape.png"
@@ -1187,7 +1187,7 @@ refs 4
 kids 0
 OBJECT poly
 name "hsi.bezel"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 9
 hsi.bezel
 texture "pfd.png"
@@ -1423,7 +1423,7 @@ refs 4
 kids 0
 OBJECT poly
 name "hsi.bug.GPS"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 11
 hsi.bug.GPS
 texture "pfd.png"
@@ -1444,7 +1444,7 @@ refs 4
 kids 0
 OBJECT poly
 name "hsi.bug.HDG"
-loc 0.0053465 0.026791 2.32831e-10
+loc 0.0013465 0.026791 -3.49245e-10
 data 11
 hsi.bug.HDG
 texture "pfd.png"
@@ -1505,7 +1505,7 @@ refs 3
 kids 0
 OBJECT poly
 name "hsi.compass"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 11
 hsi.compass
 texture "pfd.png"
@@ -11425,7 +11425,7 @@ refs 4
 kids 0
 OBJECT poly
 name "hsi.crs.deflect.ref"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 19
 hsi.crs.deflect.ref
 texture "pfd.png"
@@ -12587,7 +12587,7 @@ refs 4
 kids 0
 OBJECT poly
 name "hsi.crs.deflection"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 18
 hsi.crs.deflection
 texture "pfd.png"
@@ -12608,7 +12608,7 @@ refs 4
 kids 0
 OBJECT poly
 name "hsi.crs.plane"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 13
 hsi.crs.plane
 texture "pfd.png"
@@ -12755,7 +12755,7 @@ refs 3
 kids 0
 OBJECT poly
 name "hsi.crs.pointer"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 15
 hsi.crs.pointer
 texture "pfd.png"
@@ -12878,7 +12878,7 @@ refs 3
 kids 0
 OBJECT poly
 name "hsi.fond"
-loc 0.0053245 0.026791 2.32831e-10
+loc 0.0013245 0.026791 -3.49245e-10
 data 8
 hsi.fond
 texture "pfd.png"
