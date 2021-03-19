@@ -151,8 +151,48 @@ var iff_display = {
   },
 };
 
-# 
-
+# ========================================================================== Route Manager
+var nav_display = {
+  canvas_settings: {
+    "name": "navDisplay",
+    "size": [512, 512],
+    "view": [512, 512],
+    "mipmapping": 1
+  },
+  new: func(placement)  # create a new canvas...
+  {
+    var m = { parents: [nav_display],
+    canvas: canvas.new(nav_display.canvas_settings)
+  };
+    m.canvas.addPlacement({"node": "canvas_NAV_screen"});
+    m.canvas.setColorBackground(0,0,0.1, 1);
+    var g = m.canvas.createGroup()
+    	.set("font", "LiberationFonts/LiberationMono-Regular.ttf")
+    	.setDouble("character-size", 36)
+        .setDouble("character-aspect-ration", 1.0)
+    ;
+    m.nav_a_txt =
+      g.createChild("text", "line-title")
+       .setDrawMode(canvas.Text.TEXT + canvas.Text.FILLEDBOUNDINGBOX)
+       .setColor(1,1,0,1)
+       .setColorFill(0,0,0.1,1)
+       .setAlignment("center-center")
+       .setFontSize(36, 1.2)
+       .setTranslation(256, 64);
+    return m;
+  },
+  update: func()
+  { 
+  	var rmTxt = 'ROUTE MANAGER';
+  	if (getprop("autopilot/route-manager/current-wp") == -1 ){
+  		rmTxt = 'Route Manager NOT active' ;
+  	}
+  	#else{} place holder for Route Manager data display
+    me.nav_a_txt.setText(rmTxt);
+    
+    settimer(func me.update(), 0.1);
+  },
+};
 
 var init = setlistener("/sim/signals/fdm-initialized", func() {
   removelistener(init); # only call once
@@ -160,10 +200,12 @@ var init = setlistener("/sim/signals/fdm-initialized", func() {
   var com2_f = com2_display.new({"node": "canvas_COM2_frequency"});
   var nav1_f = nav1_display.new({"node": "canvas_NAV1_frequency"}); 
   var iff_id = iff_display.new({"node": "canvas_IFF_squawk"}); 
-  
+  var nav_scr = nav_display.new({"node": "canvas_NAV_screen"}); 
+    
   com1_f.update();
   com2_f.update();
   nav1_f.update();
   iff_id.update();
+  nav_scr.update();
   
 });
